@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: adminlte-base
+Version: 0.2.0
+Summary: A basic package to simplify the integration of AdminLTE with other frameworks.
+Home-page: https://github.com/kyzima-spb/adminlte-base
+Author: Kirill Vercetti
+Author-email: office@kyzima-spb.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Dist: arrow
+
+adminlte-base
+=============
+
+This is not a ready-to-use package, but a basic one - to simplify integration with other frameworks.
+
+

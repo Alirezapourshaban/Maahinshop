@@ -1,0 +1,287 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+    name='viewport'/>
+    <title>shipping</title>
+    <!--    font------------------------------------>
+    <link rel="stylesheet" href=" {% static  'assets/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href=" {% static  'assets/css/materialdesignicons.css' %}">
+    <link rel="stylesheet" href=" {% static  'assets/css/materialdesignicons.css.map' %}">
+    <!--    bootstrap------------------------------->
+    <link rel="stylesheet" href=" {% static  'assets/css/bootstrap.css' %}">
+    <!--    responsive------------------------------>
+    <link rel="stylesheet" href=" {% static  'assets/css/responsive.css' %}">
+    <!--    main style------------------------------>
+    <link rel="stylesheet" href=" {% static  'assets/css/main.css' %}">
+</head>
+<body>
+
+<!--header------------------------------------->
+        <header class="js-header">
+            <div class="container">
+                <div class="header-row">
+                    <div class="header-logo">
+                        <a href=" {% static  '" class="header-logo-img"></a>
+                    </div>
+                    <div class="shipment-page">
+                        <ul class="checkout-steps">
+                            <li class="is-completed">
+                                <a href=" {% static  '#' %}" class="checkout-steps-item-link active-link-shopping">
+                                    <span>اطلاعات ارسال</span>
+                                </a>
+                            </li>
+                            <li class="is-completed">
+                                <a href=" {% static  '#' %}" class="checkout-steps-item active-link">
+                                    <span>پرداخت</span>
+                                </a>
+                            </li>
+                            <li class="is-active">
+                                <a href=" {% static  '#' %}" class="checkout-steps-item active-link">
+                                    <span>اتمام خرید و ارسال</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+<!--header------------------------------------->
+<!--shipping----------------------------------->
+        <section class="page-shipping">
+            <div class="page-row">
+                <div class="col-lg-8 col-md-8 col-xs-12 pull-right">
+                    <div class="shipment-page-container">
+                        <div class="headline-checkout">
+                            <span>انتخاب آدرس تحویل سفارش</span>
+                        </div>
+                        <div class="address-section">
+                            <div class="checkout-contact">
+                                <div class="checkout-contact-content">
+                                    <ul class="checkout-contact-items" style="display:inline-block;">
+                                        <li class="checkout-contact-item checkout-contact-item-username"> گیرنده : 
+                                            <span class="js-recipient-full-name">حسن شجاعی</span>
+                                            <a href=" {% static  '#' %}" class="checkout-contact-edit" data-toggle="modal" data-target="#exampleModalCenter">اصلاح این آدرس</a>
+                                        </li>
+                                        <li class="checkout-contact-item checkout-contact-item-location">
+                                        <div class="checkout-contact-item checkout-contact-item-mobile">
+                                             شماره تماس : 
+                                             <span class="js-recipient-mobile-phone" data-value="09919140356">۰۹۹۱۹۱۴۰۳۵۶</span>
+                                        </div>
+                                        <div class="checkout-contact-item-message">
+                                            کد پستی :
+                                            <span class="js-recipient-post_code" data-value="99999999999">99999999999</span>
+                                        </div>
+                                        <br>
+                                        <span class="js-recipient-address-part">خراسان شمالی، بجنورد</span>
+                                        </li>
+                                    </ul>
+                                    <button class="checkout-contact-location" data-toggle="modal" data-target="#exampleModalCenter">تغییر آدرس ارسال</button>
+                                </div>
+                            </div>
+                        </div>
+                        <form action="#' %}" id="shipping-data-form">
+                            <div class="js-normal-delivery">
+                                 <div class="headline-checkout">
+                                    <span>انتخاب نحوه ارسال سفارش</span>
+                                 </div>
+                                 <div class="checkout-pack">
+                                     <div class="checkout-pack-header">
+                                         <div class="checkout-pack-header-title">
+                                             <span>مرسوله ۱ از ۱</span>
+                                             <div class="checkout-time-table-shipping-type">ارسال عادی</div>
+                                         </div>
+                                     </div>
+                                     <div class="checkout-pack-row">
+                                         <section class="swiper-products-compact">
+                                             <div class="swiper-slide">
+                                                 <div class="product-box">
+                                                     <a class="product-box-img">
+                                                         <img src=" {% static  'assets/images/shipping/1.jpg' %}">
+                                                     </a>
+                                                     <div class="product-box-variant-color">
+                                                         <span style="background-color: #00fff0;"></span>
+                                                         سبز آبی
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                         </section>
+                                     </div>
+                                     <div class="checkout-pack-row js-shipment-submit-type">
+                                         <div class="checkout-time-table">
+                                             <div class="checkout-additional-options-action-bar">
+                                                 <div class="checkout-additional-options-checkbox-container">
+                                                     <label for="#' %}" class="checkout-additional-options-checkbox-image"></label>
+                                                 </div>
+                                                 <div class="checkout-additional-options-action-container">
+                                                     <div class="checkout-additional-options-action-title">پست پیشتاز با ظرفیت اختصاصی برای دیجی اسمارت</div>
+                                                     <div class="checkout-additional-options-action-lead-time">
+                                                         زمان تقریبی تحویل از ۲۴ بهمن تا ۲۸ بهمن
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                         <div class="checkout-shipment-invoice-type">
+                                             <div class="form-auth-row">
+                                                <label for="#' %}" class="ui-checkbox">
+                                                    <input type="checkbox" value="1" name="login" id="remember">
+                                                    <span class="ui-checkbox-check"></span>
+                                                </label>
+                                                <label for="remember" class="remember-me">درخواست ارسال فاکتور خرید </label>
+                                            </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                            </div>
+                        </form>
+                        <div class="checkout-actions">
+                            <a href=" {% static  '#' %}" class="checkout-actions-back"><i class="fa fa-angle-right" aria-hidden="true"></i>بازگشت به سبد خرید</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-xs-12 pull-left">
+                    <div class="page-aside">
+                        <div class="checkout-aside">
+                            <div class="checkout-bill">
+                                <ul class="checkout-bill-summary">
+                                    <li>
+                                        <span class="checkout-bill-item-title">قیمت کالاها(۱)</span>
+                                        <span class="checkout-bill-price">
+                                            ۴,۰۴۵,۰۰۰
+                                            <span class="checkout-bill-currency">
+                                                تومان
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="checkout-bill-item-title">هزینه ارسال</span>
+                                        <span class="checkout-bill-item-title js-free-shipping">رایگان</span>
+                                    </li>
+                                    <li class="checkout-bill-total-price">
+                                        <span class="checkout-bill-total-price-title">مبلغ قابل پرداخت</span>
+                                        <span class="checkout-bill-total-price-amount">
+                                            <span class="js-price">۴,۰۴۵,۰۰۰ </span>
+                                            <span class="checkout-bill-total-price-currency">تومان</span>
+                                        </span>
+                                        <div class="parent-btn">
+                                            <button class="dk-btn dk-btn-info payment-link">
+                                                     ادامه فرآیند خرید
+                                                <i class="mdi mdi-arrow-left"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="checkout-bill-digiclub">
+                                    <span class="wiki-holder">امتیاز دیجی‌کلاب</span>
+                                    <span class="checkout-bill-digiclub-point">
+                                        ۱۵۰
+                                        <span class="checkout-bill-currency">
+                                            امتیاز
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--shipping----------------------------------->
+        
+        <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">
+                       <i class="fa fa-map-marker" aria-hidden="true"></i>
+                       افزودن آدرس جدید
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                        <div class="middle-container">
+                        <form action="#' %}" class="form-checkout">
+                            <div class="form-checkout-row">
+                                <label for="name">نام تحویل گیرنده <span class="required-star" style="color:red;">*</span></label>
+                                <input type="text" id="name" class="input-name-checkout form-control" placeholder="نام تحویل گیرنده را وارد نمایید">
+                                <label for="phone-number">شماره موبایل <span class="required-star" style="color:red;">*</span></label>
+                                <input type="text" id="phone-number" class="input-name-checkout form-control" placeholder="09xxxxxxxxx" style="text-align:left;">
+                                <label for="fixed-number">شماره تلفن ثابت <span class="required-star" style="color:red;">*</span></label>
+                                <input type="text" id="fixed-number" class="input-name-checkout form-control" placeholder="021xxxxxx" style="text-align:left;">
+                                
+                                <div class="form-checkout-valid-row">
+                                    <label for="province">استان                                     <span class="required-star" style="color:red;"></span></label>
+                                    <select name="" id="province" class="form-control">
+                                        <option value="date-desc" selected="selected">شهر مورد نظر خود را انتخاب کنید </option>
+                                        <option value="date-asc">تهران</option>
+                                        <option value="rate">مشهد</option>
+                                        <option value="views">اصفهان</option>
+                                        <option value="comments">شیراز</option>
+                                    </select>
+                                    <label for="bld-num">پلاک<span class="required-star" style="color:red;">*</span></label>
+                                    <input type="text" id="bld-num" class="input-name-checkout js-input-bld-num form-control" placeholder="پلاک را وارد نمایید">
+
+                                </div>
+                                
+                                <div class="form-checkout-valid-row">
+                                    <label for="city">شهر 
+                                    <span class="required-star" style="color:red;">*</span></label>
+                                    <select name="" id="city" class="form-control">
+                                        <option value="date-desc" selected="selected">شهر مورد نظر خود را انتخاب کنید</option>
+                                        <option value="date-asc">آشخانه</option>
+                                        <option value="rate">شیروان</option>
+                                        <option value="views">اسفراین</option>
+                                        <option value="comments">جاجرم</option>
+                                    </select>
+                                    <label for="apt-id">واحد</label>
+                                    <input type="text" id="apt-id" class="input-name-checkout js-input-apt-id form-control" placeholder="واحد را وارد نمایید">
+                                </div>
+                                
+                                <label for="post-code">کد پستی<span class="required-star" style="color:red;">*</span></label>
+                                <input type="text" id="post-code" class="input-name-checkout form-control" placeholder="کد پستی را بدون خط تیره بنویسید">
+                                
+                                <label for="address">آدرس 
+                                <span class="required-star" style="color:red;">*</span></label>
+                                <input type="text" id="address" class="input-name-checkout form-control" placeholder="آدرس خود را وارد نمایید" style="height:80px;">
+                                
+                                <div class="AR-CR">
+                                    <button class="btn-registrar"> ثبت آدرس</button>
+                                    <a href=" {% static  '#' %}" class="cancel-edit-address" data-dismiss="modal" aria-label="Close">انصراف و بازگشت</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+<!--footer------------------------------------->
+        <footer class="footer-light">
+            <div class="container">
+                <ul class="footer-light-link">
+                    <li><a href=" {% static  '#' %}">درباره دیجی اسمارت</a></li>
+                    <li><a href=" {% static  '#' %}">فرصت‌های شغلی</a></li>
+                    <li><a href=" {% static  '#' %}">تماس با ما</a></li>
+                    <li><a href=" {% static  '#' %}">همکاری با سازمان‌ها</a></li>
+                </ul>
+
+                <p class="title-footer">استفاده از مطالب فروشگاه اینترنتی دیجی‌اسمارت فقط برای مقاصد غیرتجاری و با ذکر منبع بلامانع است. کلیه حقوق این سایت متعلق به شرکت نوآوران فن آوازه (فروشگاه آنلاین دیجی‌اسمارت) می‌باشد.</p>
+
+                <p class="copy-right-footer-light">Copyright © 2006 - 2019 DigiSmart.com</p>
+            </div>
+        </footer>
+<!--footer------------------------------------->
+</body>
+<!--jquery--------------------------------------->
+<script src=" {% static  'assets/js/jquery-3.2.1.min.js"></script>
+<!--    bootstrap-------------------------------->
+<script src=" {% static  'assets/js/bootstrap.js"></script>
+<!--main----------------------------------------->
+<script src=" {% static  'assets/js/main.js"></script>
+</html>

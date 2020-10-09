@@ -1,0 +1,38 @@
+from django.urls import path
+from .views import HomePageView, aboutPageView, cartPageView, cartemptyPageView,faqPageView,contactPageView,logincustomerPageView,ordersreturnPageView,customerpasswordchangePageView,customerpasswordforgotPageView,customerprofilePageView,customerregisterPageView,customerwelcomePageView,productcommentPageView,profileaddressesPageView,profilefavoritesPageView,profileorder2PageView,profileorderPageView,privacyPageView,singlenoproductPageView,singleproductPageView,profileadditionalinfoPageView,profilepersonalinfoPageView,profileuserhistoryPageView,shippingpaymentPageView,shippingcomplatebuyPageView,shippingnocomplatebuyPageView,searchPageView,verifyphonenumberPageView,shippingPageView,Error404pageView
+
+urlpatterns = [
+    path('', HomePageView.as_view(), name='index'),
+    path('about/', aboutPageView.as_view(), name='about'),
+    path('cart/', cartPageView.as_view(), name='cart'),
+    path('cart_empty/', cartemptyPageView.as_view(), name='cartempty'),
+    path('contact_us/', contactPageView.as_view(), name='contactus'),
+    path('faq/', faqPageView.as_view(), name='faq'),
+    path('login_customer/', logincustomerPageView.as_view(), name='logincustomer'),
+    path('orders_return/', ordersreturnPageView.as_view(), name='ordersreturn'),
+    path('customer_password_change/', customerpasswordchangePageView.as_view(), name='customerpasswordchange'),
+    path('customer_password_forgot/', customerpasswordforgotPageView.as_view(), name='Customerpasswordforgot'),
+    path('customer_profile/', customerprofilePageView.as_view(), name='Customerprofile'),
+    path('customer_register/', customerregisterPageView.as_view(), name='Customerregister' ),
+    path('customer_welcome/', customerwelcomePageView.as_view(), name='Customerwelcome'),
+    path('login_customer/', logincustomerPageView.as_view(), name='logincustomer' ),
+    path('privacy/', privacyPageView.as_view(), name='privacy'),
+    path('profile_addresses/', profileaddressesPageView.as_view(), name='profileaddresses' ),
+    path('product_comment/', productcommentPageView.as_view(), name='productcomment'),
+    path('profile_additional_info/', profileadditionalinfoPageView.as_view(), name='profileadditionalinfo'),
+    path('profile_favorites/', profilefavoritesPageView.as_view(), name='profilefavorites'),
+    path('profile_order/', profileorderPageView.as_view(), name='profileorder'),
+    path('profile_order2/', profileorder2PageView.as_view(), name='profileorder2'),
+    path('profile_personal_info/', profilepersonalinfoPageView.as_view(), name='profilepersonalinfo'),
+    path('profile_user_history/', profileuserhistoryPageView.as_view(), name='profileuserhistory'),
+    path('search/', searchPageView.as_view(), name='search'),
+    path('shipping/', shippingPageView.as_view(), name='shipping'),
+    path('shipping_complate_buy/', shippingcomplatebuyPageView.as_view(), name='shippingcomplatebuy'),
+    path('shipping_no_complate_buy/', shippingnocomplatebuyPageView.as_view(), name='shippingnocomplatebuy'),
+    path('shipping_payment/', shippingpaymentPageView.as_view(), name='shippingpayment'),
+    path('single_no_product/', singlenoproductPageView.as_view(), name='singlenoproduct'),
+    path('single_product/', singleproductPageView.as_view(), name='singleproduct'),
+    path('verify_phone_number/', verifyphonenumberPageView.as_view(), name='verifyphonenumber'),
+    path('404/' , Error404pageView.as_view(), name='404'),
+
+]

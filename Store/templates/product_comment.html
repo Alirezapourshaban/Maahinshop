@@ -1,0 +1,1364 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+    name='viewport'/>
+    <title>product-comment</title>
+    <!--    font------------------------------------>
+    <link rel="stylesheet" href=" {% static  'assets/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href=" {% static  'assets/css/materialdesignicons.css' %}">
+    <link rel="stylesheet" href=" {% static  'assets/css/materialdesignicons.css.map' %}">
+    <!--    bootstrap------------------------------->
+    <link rel="stylesheet" href=" {% static  'assets/css/bootstrap.css' %}">
+    <!--    bootstrap-slider------------------------>
+    <link rel="stylesheet" href=" {% static  'assets/css/bootstrap-slider.min.css' %}">
+    <!--    responsive------------------------------>
+    <link rel="stylesheet" href=" {% static  'assets/css/responsive.css' %}">
+    <!--    main style------------------------------>
+    <link rel="stylesheet" href=" {% static  'assets/css/main.css' %}">
+</head>
+<body>
+    <!--header------------------------------------->
+    <header>
+        <aside class="adplacement-top-header">
+            <a href=" {% static  'index.html' %}" class="adplacement-item" title="شگفت سوپرمارکتی"></a>
+        </aside>
+         <div class="container-main">
+             <div class="col-lg-8 col-md-8 col-xs-12 pull-right">
+                 <div class="header-right">
+                     <div class="logo">
+                         <a href=" {% static  '#' %}"><img src=" {% static  'assets/images/logo.png' %}"></a>
+                     </div>
+                     <div class="col-lg-9 col-md-9 col-xs-12 pull-right">
+                         <div class="search-header">
+                             <form action="#' %}">
+                                 <input type="text" class="search-input" placeholder="نام کالا، برند و یا دسته مورد نظر خود را جستجو کنید…">
+                                 <button type="submit" class="button-search">
+                                     <img src=" {% static  'assets/images/search.png' %}">
+                                 </button>
+                             </form>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-lg-4 col-md-4 col-xs-12 pull-left">
+                 <div class="header-left">
+                     <ul class="nav-lr">
+                         <li class="nav-item-account">
+                             <a href=" {% static  '#' %}">
+                                 حساب کاربری
+                                 <img src=" {% static  'assets/images/user.png' %}" alt="user">
+                                 <div class="dropdown-menu">
+                                     <ul>
+                                         <li class="dropdown-menu-item">
+                                             <a href=" {% static  '#' %}" class="dropdown-item">
+                                                 <i class="mdi mdi-account-card-details-outline"></i>
+                                                 حساب کاربری من
+                                             </a>
+                                         </li>
+                                         <li class="dropdown-menu-item">
+                                             <a href=" {% static  '#' %}" class="dropdown-item">
+                                                 <i class="mdi mdi-comment-text-outline"></i>
+                                                 پیام ها
+                                                 <span class="count">1</span>
+                                             </a>
+                                         </li>
+                                         <li class="dropdown-menu-item">
+                                             <a href=" {% static  '#' %}" class="dropdown-item">
+                                                 <i class="mdi mdi-logout-variant"></i>
+                                                 خروج از حساب 
+                                             </a>
+                                         </li>
+                                     </ul>
+                                 </div>
+                             </a>
+                         </li>
+                     </ul>
+                 </div>
+             </div>
+         </div>
+ <!--        menu------------------------------->
+         <nav class="main-menu">
+             <div class="container-main">
+                 <div>
+                     <ul class="list-menu">
+                         <li class="item-list-menu megamenu">
+                             <a href=" {% static  '#' %}" class="list-category"> فروشگاه ها</a>
+                         </li>
+                         <li class="item-list-menu megamenu">
+                             <a href=" {% static  '#' %}" class="list-category">محصولات<i class="fa fa-angle-down"></i></a>
+                             <ul class="sub-menu">
+                                 <li class="list-item-children">
+                                     <a href=" {% static  '#' %}" class="list-item-children-category">
+                                        <img src=" {% static  'assets/images/menu/carpet.png' %}">
+                                         فروش تابلو فرش
+                                     </a>
+                                     <ul class="megamenu-level-3" style="display:block">
+                                         <a href=" {% static  '#' %}" class="list-category-megamenu">همه دسته بندی های فرش و تابلو فرش</a>
+                                         <div class="level-three-menu">
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">فرش و تابلو فرش </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">فرش و تابلو فرش </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">فرش و تابلو فرش </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">فرش و تابلو فرش </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">فرش و تابلو فرش </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">فرش و تابلو فرش </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">فرش و تابلو فرش </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">فرش و تابلو فرش </a>
+                                             </li>
+                                         </div>
+                                         <div class="level-three-menu">
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">فرش و تابلو فرش </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">فرش و تابلو فرش </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">فرش و تابلو فرش </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">فرش و تابلو فرش </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">فرش و تابلو فرش </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">فرش و تابلو فرش </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">فرش و تابلو فرش </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">فرش و تابلو فرش </a>
+                                             </li>
+                                         </div>
+                                         <div class="level-three-menu">
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">فرش و تابلو فرش </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">فرش و تابلو فرش </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">فرش و تابلو فرش </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">فرش و تابلو فرش </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">فرش و تابلو فرش </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">فرش و تابلو فرش </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">فرش و تابلو فرش </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">فرش و تابلو فرش </a>
+                                             </li>
+                                         </div>
+                                         <div class="level-three-menu">
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">فرش و تابلو فرش </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">فرش و تابلو فرش </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">فرش و تابلو فرش </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">فرش و تابلو فرش </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">فرش و تابلو فرش </a>
+                                             </li>
+                                         </div>
+                                         <div class="images-menu-list">
+                                             <a href=" {% static  '#' %}">
+                                                 <img src=" {% static  'assets/images/menu/architecture-cabinets-carpet-chair-245208.jpg' %}">
+                                                 <div class="box-shadow"></div>
+                                             </a>
+                                         </div>
+                                     </ul>
+                                 </li>
+                                 <li class="list-item-children">
+                                     <a href=" {% static  '#' %}" class="list-item-children-category">
+                                         <img src=" {% static  'assets/images/menu/necklace.png' %}">
+                                         طلا و جواهر
+                                     </a>
+                                     <ul class="megamenu-level-3">
+                                         <a href=" {% static  '#' %}" class="list-category-megamenu">همه دسته بندی های طلا و جواهر</a>
+                                         <div class="level-three-menu">
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">طلا و جواهر </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">طلا و جواهر </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">طلا و جواهر </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">طلا و جواهر </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">طلا و جواهر </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">طلا و جواهر </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">طلا و جواهر </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">طلا و جواهر </a>
+                                             </li>
+                                         </div>
+                                         <div class="level-three-menu">
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">طلا و جواهر </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">طلا و جواهر </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">طلا و جواهر </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">طلا و جواهر </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">طلا و جواهر </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">طلا و جواهر </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">طلا و جواهر </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">طلا و جواهر </a>
+                                             </li>
+                                         </div>
+                                         <div class="level-three-menu">
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">طلا و جواهر </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">طلا و جواهر </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">طلا و جواهر </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">طلا و جواهر </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">طلا و جواهر </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">طلا و جواهر </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">طلا و جواهر </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">طلا و جواهر </a>
+                                             </li>
+                                         </div>
+                                         <div class="level-three-menu">
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">طلا و جواهر </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">طلا و جواهر </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">طلا و جواهر </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">طلا و جواهر </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">طلا و جواهر </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">طلا و جواهر </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">طلا و جواهر </a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">طلا و جواهر </a>
+                                             </li>
+                                         </div>
+                                         <div class="images-menu-list">
+                                             <a href=" {% static  '#' %}">
+                                                 <img src=" {% static  'assets/images/menu/close-up-photo-of-diamond-stud-silver-colored-eternity-ring-691046.jpg' %}">
+                                                 <div class="box-shadow"></div>
+                                             </a>
+                                         </div>
+                                     </ul>
+                                 </li>
+                                 <li class="list-item-children">
+                                     <a href=" {% static  '#' %}" class="list-item-children-category">
+                                         <img src=" {% static  'assets/images/menu/digital.png' %}">
+                                         کالای دیجیتال
+                                     </a>
+                                     <ul class="megamenu-level-3">
+                                         <a href=" {% static  '#' %}" class="list-category-megamenu">همه دسته بندی های کالای دیجیتال</a>
+                                         <div class="level-three-menu">
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">کالای دیجیتال</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">کالای دیجیتال</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">کالای دیجیتال</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">کالای دیجیتال</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">کالای دیجیتال</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">کالای دیجیتال</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">کالای دیجیتال</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">کالای دیجیتال</a>
+                                             </li>
+                                         </div>
+                                         <div class="level-three-menu">
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">کالای دیجیتال</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">کالای دیجیتال</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">کالای دیجیتال</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">کالای دیجیتال</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">کالای دیجیتال</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">کالای دیجیتال</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">کالای دیجیتال</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">کالای دیجیتال</a>
+                                             </li>
+                                         </div>
+                                         <div class="level-three-menu">
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">کالای دیجیتال</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">کالای دیجیتال</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">کالای دیجیتال</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">کالای دیجیتال</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">کالای دیجیتال</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">کالای دیجیتال</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                <a href=" {% static  '#' %}" class="megamenu-category">کالای دیجیتال</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">کالای دیجیتال</a>
+                                             </li>
+                                         </div>
+                                         <div class="level-three-menu">
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">کالای دیجیتال</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">کالای دیجیتال</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">کالای دیجیتال</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">کالای دیجیتال</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">کالای دیجیتال</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">کالای دیجیتال</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                <a href=" {% static  '#' %}" class="megamenu-category">کالای دیجیتال</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">کالای دیجیتال</a>
+                                             </li>
+                                         </div>
+                                         <div class="images-menu-list">
+                                             <a href=" {% static  '#' %}">
+                                                 <img src=" {% static  'assets/images/menu/macbook-and-ipad-on-desk-207589.jpg' %}">
+                                                 <div class="box-shadow"></div>
+                                             </a>
+                                         </div>
+                                     </ul>
+                                 </li>
+                                 <li class="list-item-children">
+                                     <a href=" {% static  '#' %}" class="list-item-children-category">
+                                         <img src=" {% static  'assets/images/menu/dishes.png' %}">
+                                         ظروف
+                                     </a>
+                                     <ul class="megamenu-level-3">
+                                         <a href=" {% static  '#' %}" class="list-category-megamenu">همه دسته بندی های ظروف</a>
+                                         <div class="level-three-menu">
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">ظروف</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">ظروف</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">ظروف</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">ظروف</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">ظروف</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">ظروف</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">ظروف</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">ظروف</a>
+                                             </li>
+                                         </div>
+                                         <div class="level-three-menu">
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">ظروف</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">ظروف</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">ظروف</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">ظروف</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">ظروف</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">ظروف</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">ظروف</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">ظروف</a>
+                                             </li>
+                                         </div>
+                                         <div class="level-three-menu">
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">ظروف</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">ظروف</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">ظروف</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">ظروف</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">ظروف</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">ظروف</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">ظروف</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">ظروف</a>
+                                             </li>
+                                         </div>
+                                         <div class="level-three-menu">
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">ظروف</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">ظروف</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">ظروف</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">ظروف</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">ظروف</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">ظروف</a>
+                                             </li>
+                                         </div>
+                                         <div class="images-menu-list">
+                                             <a href=" {% static  '#' %}">
+                                                 <img src=" {% static  'assets/images/menu/delicious-food-on-the-table-2466644.jpg' %}">
+                                                 <div class="box-shadow"></div>
+                                             </a>
+                                         </div>
+                                     </ul>
+                                 </li>
+                                 <li class="list-item-children">
+                                     <a href=" {% static  '#' %}" class="list-item-children-category">
+                                         <img src=" {% static  'assets/images/menu/dress.png' %}">
+                                         پوشاک
+                                     </a>
+                                     <ul class="megamenu-level-3">
+                                         <a href=" {% static  '#' %}" class="list-category-megamenu">همه دسته بندی های پوشاک</a>
+                                         <div class="level-three-menu">
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">پوشاک</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">پوشاک</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">پوشاک</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">پوشاک</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">پوشاک</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">پوشاک</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">پوشاک</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">پوشاک</a>
+                                             </li>
+                                         </div>
+                                         <div class="level-three-menu">
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">پوشاک</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">پوشاک</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">پوشاک</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">پوشاک</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">پوشاک</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">پوشاک</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">پوشاک</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">پوشاک</a>
+                                             </li>
+                                         </div>
+                                         <div class="level-three-menu">
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">پوشاک</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">پوشاک</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">پوشاک</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">پوشاک</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">پوشاک</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">پوشاک</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">پوشاک</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">پوشاک</a>
+                                             </li>
+                                         </div>
+                                         <div class="level-three-menu">
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">پوشاک</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">پوشاک</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">پوشاک</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">پوشاک</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">پوشاک</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">پوشاک</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">پوشاک</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">پوشاک</a>
+                                             </li>
+                                         </div>
+                                         <div class="images-menu-list">
+                                             <a href=" {% static  '#' %}">
+                                                 <img src=" {% static  'assets/images/menu/black-framed-eyeglasses-on-white-jacket-and-blue-denim-934070.jpg' %}">
+                                                 <div class="box-shadow"></div>
+                                             </a>
+                                         </div>
+                                     </ul>
+                                 </li>
+                                 <li class="list-item-children">
+                                     <a href=" {% static  '#' %}" class="list-item-children-category">
+                                         <img src=" {% static  'assets/images/menu/couch.png' %}">
+                                         مبلمان
+                                     </a>
+                                     <ul class="megamenu-level-3">
+                                         <a href=" {% static  '#' %}" class="list-category-megamenu">همه دسته بندی های مبلمان</a>
+                                         <div class="level-three-menu">
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">مبلمان</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">مبلمان</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">مبلمان</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">مبلمان</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">مبلمان</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">مبلمان</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">مبلمان</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">مبلمان</a>
+                                             </li>
+                                         </div>
+                                         <div class="level-three-menu">
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">مبلمان</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">مبلمان</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">مبلمان</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">مبلمان</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">مبلمان</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">مبلمان</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">مبلمان</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">مبلمان</a>
+                                             </li>
+                                         </div>
+                                         <div class="level-three-menu">
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">مبلمان</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">مبلمان</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">مبلمان</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">مبلمان</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">مبلمان</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">مبلمان</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">مبلمان</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">مبلمان</a>
+                                             </li>
+                                         </div>
+                                         <div class="level-three-menu">
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">مبلمان</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">مبلمان</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">مبلمان</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">مبلمان</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">مبلمان</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">مبلمان</a>
+                                             </li>
+                                             <li class="megamenu-list-item">
+                                                 <a href=" {% static  '#' %}" class="megamenu-category">مبلمان</a>
+                                             </li>
+                                         </div>
+                                         <div class="images-menu-list">
+                                             <a href=" {% static  '#' %}">
+                                                 <img src=" {% static  'assets/images/menu/building-chair-comfort-comfortable-276528.jpg' %}">
+                                                 <div class="box-shadow"></div>
+                                             </a>
+                                         </div>
+                                     </ul>
+                                 </li>
+                             </ul>
+                         </li>
+                         <li class="item-list-menu megamenu">
+                             <a href=" {% static  '#' %}" class="list-category">ثبت فروشگاه</a>
+                         </li>
+                         <li class="item-list-menu megamenu">
+                             <a href=" {% static  '#' %}" class="list-category">مقالات</a>
+                         </li>
+                         <li class="item-list-menu megamenu">
+                             <a href=" {% static  '#' %}" class="list-category">درباره ما</a>
+                         </li>
+                         <li class="item-list-menu megamenu">
+                             <a href=" {% static  '#' %}" class="list-category">تماس با ما</a>
+                         </li>
+                         <li class="nav-item-account nav-item-cart">
+                             <a href=" {% static  '#' %}">
+                                 <span class="mdi mdi-cart"></span>
+                                     سبد خرید
+                                 <span class="count">2</span>
+                             </a>
+                                 <div class="dropdown-menu-cart">
+                                     <div class="dropdown-header">
+                                         <a href=" {% static  '#' %}" class="view-cart">مشاهده سبد خرید</a>
+                                         <span class="fa fa-shopping-basket"></span>
+                                         سبد خرید
+                                         <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                                     </div>
+                                     <ul class="dropdown-list">
+                                         <a href=" {% static  '#' %}">
+                                             <li class="dropdown-item">
+                                                 <div class="title-cart">
+                                                     <img src=" {% static  'assets/images/cart/1335154.jpg' %}">
+                                                      اپل مدل iPhone X ظرفیت 64 گیگابایت
+                                                     <div class="price">۱۲,۲۵۰,۰۰۰
+                                                         <span>تومان</span>
+                                                     </div>
+                                                     <button class="btn-delete">
+                                                         <span class="fa fa-trash"></span>
+                                                     </button>
+                                                 </div>
+                                             </li>
+                                             <li class="dropdown-item">
+                                                 <div class="title-cart">
+                                                     <img src=" {% static  'assets/images/cart/110964035.jpg' %}">
+                                                     لپ تاپ ایسوس 
+                                                     <div class="price">۱۰,۲۵۰,۰۰۰
+                                                         <span>تومان</span>
+                                                     </div>
+                                                     <button class="btn-delete">
+                                                         <span class="fa fa-trash"></span>
+                                                     </button>
+                                                 </div>
+                                             </li>
+                                         </a>
+                                     </ul>
+                                     <div class="footer-dropdown">
+                                         <div class="amount-total-buy">
+                                             <div class="price">
+                                                 <span class="total">مبلغ کل خرید :</span>
+                                                 <span class="toman">۱۲,۲۵۰,۰۰۰
+                                                     <span>تومان</span>
+                                                 </span>
+                                             </div>
+                                         </div>
+                                         <a href=" {% static  '#' %}" class="checkout">تسویه حساب</a>
+                                     </div>
+                                 </div>
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
+             <div class="nav-btn nav-slider">
+                 <span class="linee1"></span>
+                 <span class="linee2"></span>
+                 <span class="linee3"></span>
+             </div>
+         </nav>
+ <!--        menu------------------------------->
+ 
+ <!--    menu-responsiver----------------------->
+         <nav class="sidebar">
+             <div class="nav-header">
+ <!--              <img class="pic-header" src=" {% static  'images/header-pic.jpg' %}" alt="">-->
+               <div class="header-cover"></div>
+               <div class="logo-wrap">
+                 <a class="logo-icon" href=" {% static  '#' %}"><img alt="logo-icon" src=" {% static  'assets/images/logo.png' %}" width="40"></a>
+               </div>
+             </div>
+             <ul class="nav-categories ul-base">
+                 <li><a href=" {% static  '#' %}">فروشگاه</a></li>
+                 <li><a href=" {% static  '#' %}" class="collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><i class="mdi mdi-chevron-down"></i>محصولات</a>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample" style="">
+                         <ul>
+                             <li class="has-sub"><a href=" {% static  '#' %}" class="category-level-2">فرش و تابلو فرش</a>
+                                 <ul>
+                                     <li><a href=" {% static  '#' %}" class="category-level-3">فرش و تابلو فرش</a></li>
+                                     <li><a href=" {% static  '#' %}" class="category-level-3">فرش و تابلو فرش</a></li>
+                                     <li><a href=" {% static  '#' %}" class="category-level-3">فرش و تابلو فرش</a></li>
+                                     <li><a href=" {% static  '#' %}" class="category-level-3">فرش و تابلو فرش</a></li>
+                                 </ul>
+                             </li>
+                             <li class="has-sub"><a href=" {% static  '#' %}" class="category-level-2">طلا و جواهر</a>
+                                 <ul>
+                                     <li><a href=" {% static  '#' %}" class="category-level-3">طلا و جواهر</a></li>
+                                     <li><a href=" {% static  '#' %}" class="category-level-3">طلا و جواهر</a></li>
+                                     <li><a href=" {% static  '#' %}" class="category-level-3">طلا و جواهر</a></li>
+                                     <li><a href=" {% static  '#' %}" class="category-level-3">طلا و جواهر</a></li>
+                                 </ul>
+                             </li>
+                             <li class="has-sub"><a href=" {% static  '#' %}" class="category-level-2">کالای دیجیتال</a>
+                                 <ul>
+                                     <li><a href=" {% static  '#' %}" class="category-level-3">کالای دیجیتال</a></li>
+                                     <li><a href=" {% static  '#' %}" class="category-level-3">کالای دیجیتال</a></li>
+                                     <li><a href=" {% static  '#' %}" class="category-level-3">کالای دیجیتال</a></li>
+                                 </ul>
+                             </li>
+                             <li class="has-sub"><a href=" {% static  '#' %}" class="category-level-2">ظروف</a>
+                                 <ul>
+                                     <li><a href=" {% static  '#' %}" class="category-level-3">ظروف</a></li>
+                                     <li><a href=" {% static  '#' %}" class="category-level-3">ظروف</a></li>
+                                     <li><a href=" {% static  '#' %}" class="category-level-3">ظروف</a></li>
+                                     <li><a href=" {% static  '#' %}" class="category-level-3">ظروف</a></li>
+                                     <li><a href=" {% static  '#' %}" class="category-level-3">ظروف</a></li>
+                                 </ul>
+                             </li>
+                             <li class="has-sub"><a href=" {% static  '#' %}" class="category-level-2">پوشاک</a>
+                                 <ul>
+                                     <li><a href=" {% static  '#' %}" class="category-level-3">پوشاک</a></li>
+                                     <li><a href=" {% static  '#' %}" class="category-level-3">پوشاک</a></li>
+                                     <li><a href=" {% static  '#' %}" class="category-level-3">پوشاک</a></li>
+                                     <li><a href=" {% static  '#' %}" class="category-level-3">پوشاک</a></li>
+                                 </ul>
+                             </li>
+                             <li class="has-sub"><a href=" {% static  '#' %}" class="category-level-2">مبلمان</a>
+                                 <ul>
+                                     <li><a href=" {% static  '#' %}" class="category-level-3">مبلمان</a></li>
+                                     <li><a href=" {% static  '#' %}" class="category-level-3">مبلمان</a></li>
+                                     <li><a href=" {% static  '#' %}" class="category-level-3">مبلمان</a></li>
+                                     <li><a href=" {% static  '#' %}" class="category-level-3">مبلمان</a></li>
+                                     <li><a href=" {% static  '#' %}" class="category-level-3">مبلمان</a></li>
+                                     <li><a href=" {% static  '#' %}" class="category-level-3">مبلمان</a></li>
+                                 </ul>
+                             </li>
+                         </ul>
+                     </div>
+                 </li>
+                 <li><a href=" {% static  '#' %}">ثبت فروشگاه</a></li>
+                 <li><a href=" {% static  '#' %}">مقالات</a></li>
+                 <li><a href=" {% static  '#' %}">درباره ما</a></li>
+                 <li><a href=" {% static  '#' %}">تماس با ما</a></li>
+             </ul>
+         </nav>
+               <div class="overlay"></div>
+ <!--    menu-responsiver----------------------->
+    
+     </header>
+<!--header------------------------------------->
+   
+<!--product-comment---------------------------->
+        <div class="container-main">
+            <div class="col-12">
+                <div class="breadcrumb-container">
+                    <ul class="js-breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href=" {% static  '#' %}" class="breadcrumb-link">خانه</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href=" {% static  '#' %}" class="breadcrumb-link">کالای دیجیتال</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href=" {% static  '#' %}" class="breadcrumb-link">موبایل</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href=" {% static  '#' %}" class="breadcrumb-link">گوشی موبایل</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href=" {% static  '#' %}" class="breadcrumb-link active-breadcrumb">گوشی موبایل سامسونگ مدل Galaxy A50s SM-A507FN/DS دو سیم کارت ظرفیت 128گیگابایت</a>
+                        </li>
+                    </ul>
+                </div>
+                <form action="#' %}" id="addCommentForm">
+                    <section class="product-comment">
+                        <div class="comments-product">
+                            <div class="comments-product-row">
+                                <div class="col-lg-4 col-md-4 col-xs-12 pull-right">
+                                    <div class="comments-product-col-gallery mt-5 pt-3 text-center">
+                                        <a href=" {% static  '#' %}">
+                                            <img src=" {% static  'assets/images/single/slider-product/A50s.jpg' %}" style="max-width: 100%;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-xs-12 pull-left">
+                                    <div class="comments-product-col-info">
+                                        <div class="comments-product-headline">
+                                            <h3 class="comments-product-title">
+                                                گوشی موبایل سامسونگ مدل Galaxy A50s SM-A507FN/DS دو سیم کارت ظرفیت 128گیگابایت
+                                                <span>Samsung Galaxy A50s SM-A507FN/DS Dual SIM 128GB Mobile Phone</span>
+                                            </h3>
+                                        </div>
+                                        <div class="comments-product-attributes px-3">
+                                            <div class="row">
+                                                <div class="col-sm-6 col-12 mb-3">
+                                                    <div class="comments-product-attributes-title">کیفیت ساخت</div>
+                                                    <input id="ex19" type="text" data-provide="slider"
+                                                        data-slider-ticks="[1, 2, 3, 4, 5]"
+                                                        data-slider-ticks-labels='["خیلی بد", "بد", "معمولی","خوب","عالی"]'
+                                                        data-slider-min="1" data-slider-max="5" data-slider-step="1"
+                                                        data-slider-value="3" data-slider-tooltip="hide" />
+                                                </div>
+                                                <div class="col-sm-6 col-12 mb-3">
+                                                    <div class="comments-product-attributes-title">ارزش خرید به نسبت قیمت
+                                                    </div>
+                                                    <input id="ex19" type="text" data-provide="slider"
+                                                        data-slider-ticks="[1, 2, 3, 4, 5]"
+                                                        data-slider-ticks-labels='["خیلی بد", "بد", "معمولی","خوب","عالی"]'
+                                                        data-slider-min="1" data-slider-max="5" data-slider-step="1"
+                                                        data-slider-value="3" data-slider-tooltip="hide" />
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6 col-12 mb-3">
+                                                    <div class="comments-product-attributes-title">نوآوری</div>
+                                                    <input id="ex19" type="text" data-provide="slider"
+                                                        data-slider-ticks="[1, 2, 3, 4, 5]"
+                                                        data-slider-ticks-labels='["خیلی بد", "بد", "معمولی","خوب","عالی"]'
+                                                        data-slider-min="1" data-slider-max="5" data-slider-step="1"
+                                                        data-slider-value="3" data-slider-tooltip="hide" />
+                                                </div>
+                                                <div class="col-sm-6 col-12 mb-3">
+                                                    <div class="comments-product-attributes-title">امکانات و قابلیت ها</div>
+                                                    <input id="ex19" type="text" data-provide="slider"
+                                                        data-slider-ticks="[1, 2, 3, 4, 5]"
+                                                        data-slider-ticks-labels='["خیلی بد", "بد", "معمولی","خوب","عالی"]'
+                                                        data-slider-min="1" data-slider-max="5" data-slider-step="1"
+                                                        data-slider-value="3" data-slider-tooltip="hide" />
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6 col-12 mb-3">
+                                                    <div class="comments-product-attributes-title">سهولت استفاده</div>
+                                                    <input id="ex19" type="text" data-provide="slider"
+                                                        data-slider-ticks="[1, 2, 3, 4, 5]"
+                                                        data-slider-ticks-labels='["خیلی بد", "بد", "معمولی","خوب","عالی"]'
+                                                        data-slider-min="1" data-slider-max="5" data-slider-step="1"
+                                                        data-slider-value="3" data-slider-tooltip="hide" />
+                                                </div>
+                                                <div class="col-sm-6 col-12 mb-3">
+                                                    <div class="comments-product-attributes-title">طراحی و ظاهر</div>
+                                                    <input id="ex19" type="text" data-provide="slider"
+                                                        data-slider-ticks="[1, 2, 3, 4, 5]"
+                                                        data-slider-ticks-labels='["خیلی بد", "بد", "معمولی","خوب","عالی"]'
+                                                        data-slider-min="1" data-slider-max="5" data-slider-step="1"
+                                                        data-slider-value="3" data-slider-tooltip="hide" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comments-add">
+                                    <div class="comments-add-row">
+                                        <div class="col-lg-6 col-md-6 col-xs-12 pull-right">
+                                            <div class="comments-add-col-form">
+                                                <div class="form-comment">
+                                                    <div class="col-md-12 col-sm-12">
+                                                        <div class="form-ui">
+                                                            <form class="px-5" onsubmit="return false">
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <div class="form-row-title mb-2">عنوان نظر شما (اجباری)</div>
+                                                                        <div class="form-row">
+                                                                            <input class="input-ui pr-2" type="text"
+                                                                                placeholder="عنوان نظر خود را بنویسید">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 mt-5">
+                                                                        <div class="form-row-title mb-2">متن نظر شما (اجباری)</div>
+                                                                        <div class="form-row">
+                                                                            <textarea class="input-ui pr-2 pt-2" rows="5"
+                                                                                placeholder="متن خود را بنویسید" style="height:120px;"></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 mt-2 mb-2 px-0">
+                                                                        <div class="product-offer-question">
+                                                                            <div class="product-offer-question-option">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    <div class="col-12 px-0">
+                                                                        <p class="d-block">با “ثبت نظر” موافقت خود را با <a href=" {% static  '#' %}"
+                                                                                class="border-bottom-dt" target="_blank">قوانین
+                                                                                انتشار محتوا</a> در دیجی‌کالا اعلام می‌کنم.</p>
+                                                                        <button class="btn comment-submit-button">
+                                                                            ثبت نظر
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div> 
+                                        <div class="col-lg-6 col-md-6 col-xs-12 pull-left">
+                                            <div class="comments-add-col-content">
+                                                <h3>دیگران را با نوشتن نظرات خود، برای انتخاب این محصول راهنمایی کنید.</h3>
+                                                <div><p>لطفا پیش از ارسال نظر، خلاصه قوانین زیر را مطالعه کنید:</p><p>فارسی بنویسید و از کیبورد فارسی استفاده کنید. بهتر است از فضای خالی (Space)
+                                                بیش‌از‌حدِ معمول، شکلک یا ایموجی استفاده نکنید و از کشیدن حروف یا کلمات با
+                                                صفحه‌کلید بپرهیزید.</p><p>به کاربران و سایر اشخاص احترام بگذارید. پیام‌هایی که شامل محتوای توهین‌آمیز و
+                                                کلمات نامناسب باشند، حذف می‌شوند.</p><p>هرگونه نقد و نظر در خصوص سایت دیجی‌کالا، خدمات و درخواست کالا را با ایمیل
+                                                <a href=" {% static  'mailto:info@digikala.com">
+                                                    info@digikala.com
+                                                </a>
+                                                یا با شماره‌ی
+
+                                                <a href=" {% static  'tel: +982161930000">
+                                                    ۶۱۹۳۰۰۰۰ - ۰۲۱
+                                                </a>
+                                                در میان بگذارید و از نوشتن آن‌ها در بخش نظرات خودداری کنید.</p></div>
+                                            </div>
+                                        </div>      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </form>
+            </div>
+        </div>
+<!--product-comment---------------------------->
+    
+<!--footer------------------------------------->
+        <footer class="footer mt-3">
+            <div class="row">
+                <div class="footer-jumpup">
+                    <div class="container">
+                        <a href=" {% static  '#' %}">
+                            <span href=" {% static  '#' %}" class="footer-jumpup-container"><i class="fa fa-angle-up"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <nav class="footer-feature-innerbox mb-1">
+                    <div class="footer-badge-item">
+                        <a href=" {% static  '#' %}" class="footer-badge-link">
+                            <img src=" {% static  'assets/images/footer/delivery.svg' %}">
+                            <span class="footer-badge-title">تحویل اکسپرس</span>
+                        </a>
+                    </div>
+                    <div class="footer-badge-item">
+                        <a href=" {% static  '#' %}" class="footer-badge-link">
+                            <img src=" {% static  'assets/images/footer/contact-us.svg' %}">
+                            <span class="footer-badge-title">پشتیبانی 24 ساعته</span>
+                        </a>
+                    </div>
+                    <div class="footer-badge-item">
+                        <a href=" {% static  '#' %}" class="footer-badge-link">
+                            <img src=" {% static  'assets/images/footer/payment-terms.svg' %}">
+                            <span class="footer-badge-title">پرداخت درمحل</span>
+                        </a>
+                    </div>
+                    <div class="footer-badge-item">
+                        <a href=" {% static  '#' %}" class="footer-badge-link">
+                            <img src=" {% static  'assets/images/footer/return-policy.svg' %}">
+                            <span class="footer-badge-title">۷ روز ضمانت بازگشت</span>
+                        </a>
+                    </div>
+                    <div class="footer-badge-item">
+                        <a href=" {% static  '#' %}" class="footer-badge-link">
+                            <img src=" {% static  'assets/images/footer/origin-guarantee.svg' %}">
+                            <span class="footer-badge-title">ضمانت اصل بودن کالا</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+                <article class="container-main">
+                    <div class="footer-middlebar">
+                        <div class="col-lg-8 col-md-8 col-xs-12 pull-right">
+                            <div class="footer-links">
+                                <div class="col-lg-4 col-md-4 col-xs-12 pull-right">
+                                    <nav class="footer-links-col">
+                                        <div class="headline-links mb-3">
+                                            <a href=" {% static  '#' %}">
+                                                راهنمای خرید از دیجی‌اسمارت
+                                            </a>
+                                        </div>
+                                        <ul class="footer-links-ul">
+                                            <li>
+                                                <a href=" {% static  '#' %}">
+                                                    نحوه ثبت سفارش
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href=" {% static  '#' %}">
+                                                    رویه ارسال سفارش
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href=" {% static  '#' %}">
+                                                    شیوه‌های پرداخت
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-xs-12 pull-right">
+                                    <nav class="footer-links-col">
+                                        <div class="headline-links mb-3">
+                                            <a href=" {% static  '#' %}">
+                                                خدمات مشتریان
+                                            </a>
+                                        </div>
+                                        <ul class="footer-links-ul">
+                                            <li>
+                                                <a href=" {% static  '#' %}">
+                                                    پاسخ به پرسش‌های متداول
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href=" {% static  '#' %}">
+                                                    رویه های بازگرداندن کالا
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href=" {% static  '#' %}">
+                                                    شرایط استفاده
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href=" {% static  '#' %}">
+                                                    حریم خصوصی
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href=" {% static  '#' %}">
+                                                    گزارش باگ
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-xs-12 pull-right">
+                                    <nav class="footer-links-col">
+                                        <div class="headline-links mb-3">
+                                            <a href=" {% static  '#' %}">
+                                                با دیجی‌اسمارت
+                                            </a>
+                                        </div>
+                                        <ul class="footer-links-ul">
+                                            <li>
+                                                <a href=" {% static  '#' %}">
+                                                    اتاق خبر دیجی‌اسمارت
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href=" {% static  '#' %}">
+                                                    فروش در دیجی‌اسمارت
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href=" {% static  '#' %}">
+                                                    فرصت های شغلی
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href=" {% static  '#' %}">
+                                                    تماس با دیجی‌اسمارت
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href=" {% static  '#' %}">
+                                                    درباره ما دیجی‌اسمارت
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-12 pull-left">
+                            <div class="footer-form">
+                                <form action="#' %}" class="form-newsletter mb-4 mt-4">
+                                    <fieldset>
+                                        <span class="form-newsletter-title">از تخفیف‌ها و جدیدترین‌های دیجی‌اسمارت باخبرشوید:</span>
+                                        <div class="form-newsletter-row">
+                                            <input type="text" class="input-field-send-email" placeholder="آدرس ایمیل خود را وارد کنید">
+                                                <button type="submit" class="btn-secondary-send">ارسال</button>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                    <div class="footer-community">
+                                        <div class="footer-social mb-4 mt-4">
+                                            <span>دیجی‌اسمارت را در شبکه‌های اجتماعی دنبال کنید:</span>
+                                            <div class="footer-social">
+                                                <ul class="footer-ul-social">
+                                                    <li class="footer-social-item">
+                                                        <a href=" {% static  '#' %}" class="footer-social-link">
+                                                            <i class="fa fa-instagram"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="footer-social-item">
+                                                        <a href=" {% static  '#' %}" class="footer-social-link">
+                                                            <i class="fa fa-twitter"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="footer-social-item">
+                                                        <a href=" {% static  '#' %}" class="footer-social-link">
+                                                            <i class="fa fa-linkedin-square"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="footer-social-item">
+                                                        <a href=" {% static  '#' %}" class="footer-social-link">
+                                                            <i class="fa fa-telegram"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="footer-more-info">
+                        <div class="footer-description-content">
+                            <div class="col-xs-8 col-md-8 col-xs-12 pull-right">
+                                <div class="footer-content">
+                                    <article class="footer-seo mt-3">
+                                        <h1>فروشگاه اینترنتی دیجی‌اسمارت، بررسی، انتخاب و خرید آنلاین</h1>
+                                        <p>دیجی‌اسمارت به عنوان یکی از قدیمی‌ترین فروشگاه های اینترنتی با بیش از یک دهه تجربه، با پایبندی به سه اصل، پرداخت در محل، 7 روز ضمانت بازگشت کالا و تضمین اصل‌بودن کالا موفق شده تا همگام با فروشگاه‌های معتبر جهان، به بزرگ‌ترین فروشگاه اینترنتی ایران تبدیل شود. به محض ورود به سایت دیجی‌اسمارت با دنیایی از کالا رو به رو می‌شوید! هر آنچه که نیاز دارید و به ذهن شما خطور می‌کند در اینجا پیدا خواهید کرد.</p>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="col-lg-4 col-md-4 col-xs-12 pull-left">
+                                    <aside>
+                                        <ul class="footer-safety-partner mt-4 pull-left">
+                                            <li class="footer-safety-partner-1">
+                                                <a href=" {% static  '#' %}">
+                                                    <img src=" {% static  'assets/images/footer/license/L-2.png' %}">
+                                                </a>
+                                            </li>
+                                            <li class="footer-safety-partner-1">
+                                                <a href=" {% static  '#' %}">
+                                                    <img src=" {% static  'assets/images/footer/license/L-1.png' %}">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </aside>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-copyright">
+                        <div class="footer-copyright-text">
+                            استفاده از مطالب فروشگاه اینترنتی دیجی‌اسمارت فقط برای مقاصد غیرتجاری و با ذکر منبع
+                            بلامانع است. کلیه حقوق این سایت متعلق به شرکت نوآوران فن آوازه (فروشگاه آنلاین دیجی‌اسمارت) می‌باشد.
+                        </div>
+                    </div>
+                </article>
+        </footer>
+<!--footer------------------------------------->
+
+</body>
+<!--jquery--------------------------------------->
+<script src=" {% static  'assets/js/jquery-3.2.1.min.js"></script>
+<!--    bootstrap-------------------------------->
+<script src=" {% static  'assets/js/bootstrap.js"></script>
+<!--bootstrap-slider----------------------------->
+<script src=" {% static  'assets/js/bootstrap-slider.min.js"></script>
+<!--main----------------------------------------->
+<script src=" {% static  'assets/js/main.js"></script>
+</html>
